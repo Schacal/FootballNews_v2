@@ -1,0 +1,4 @@
+Options FollowSymLinks
+RewriteEngine On
+
+RewriteRule ^([^-]+).html$ index.php?s=$1 [L]

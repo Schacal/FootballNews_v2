@@ -1,0 +1,78 @@
+.button {
+    display: inline-block;
+    border: 1px inset rgba(255,255,255,0.8);
+    border-radius: 15px 0 15px 0;
+    /*background-color: #8484e1;*/
+    /*background-image : linear-gradient(
+            #8484e1,#6f6fdc 50%,#5b5bd7 50%,#8484e1);*/
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3b679e+0,2b88d9+35,207cca+65,7db9e8+100&0.8+0,0.85+35,0.85+65,0.8+100 */
+    background: -moz-linear-gradient(top,  rgba(59,103,158,0.8) 0%, rgba(43,136,217,0.85) 35%, rgba(32,124,202,0.85) 65%, rgba(125,185,232,0.8) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(59,103,158,0.8) 0%,rgba(43,136,217,0.85) 35%,rgba(32,124,202,0.85) 65%,rgba(125,185,232,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(59,103,158,0.8) 0%,rgba(43,136,217,0.85) 35%,rgba(32,124,202,0.85) 65%,rgba(125,185,232,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc3b679e', endColorstr='#cc7db9e8',GradientType=0 ); /* IE6-9 */
+
+
+    /*border: none;*/
+    color: white;
+    text-align: left;
+    font-size: 1vmax;
+    padding: 0.5%;
+    width: 150%;
+    transition: all 0.25s;
+    cursor: pointer;
+    margin: 1%;
+    margin-bottom: 5%;
+    -webkit-box-shadow: 2px 2px 3px 1px rgba(255,255,255,0.7);
+    -moz-box-shadow: 2px 2px 3px 1px rgba(255,255,255,0.7);
+    box-shadow: 2px 2px 3px 1px rgba(255,255,255,0.7);
+}
+
+.button:hover{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3b679e+0,2b88d9+35,207cca+65,7db9e8+100&0.9+1,0.95+35,0.95+66,0.9+100 */
+    background: -moz-linear-gradient(top,  rgba(59,103,158,0.9) 0%, rgba(59,104,160,0.9) 1%, rgba(43,136,217,0.95) 35%, rgba(32,124,202,0.95) 65%, rgba(35,126,203,0.95) 66%, rgba(125,185,232,0.9) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(59,103,158,0.9) 0%,rgba(59,104,160,0.9) 1%,rgba(43,136,217,0.95) 35%,rgba(32,124,202,0.95) 65%,rgba(35,126,203,0.95) 66%,rgba(125,185,232,0.9) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(59,103,158,0.9) 0%,rgba(59,104,160,0.9) 1%,rgba(43,136,217,0.95) 35%,rgba(32,124,202,0.95) 65%,rgba(35,126,203,0.95) 66%,rgba(125,185,232,0.9) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e63b679e', endColorstr='#e67db9e8',GradientType=0 ); /* IE6-9 */
+
+
+    -webkit-box-shadow: 2px 2px 3px 1px rgba(145,145,145,1);
+    -moz-box-shadow: 2px 2px 3px 1px rgba(145,145,145,1);
+    box-shadow: 2px 2px 3px 1px rgba(145,145,145,1);
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    text-shadow: 3px 3px 4px #000000;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 30%;
+    right: -30%;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 15px;
+
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+    text-shadow: 3px 3px 4px #000000;
+}
+
+a:link, a:visited {
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
