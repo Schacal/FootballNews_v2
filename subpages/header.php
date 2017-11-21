@@ -15,6 +15,11 @@
 <nav class="navbar navbar-inverse">
     <div class="container-fluid" > 
         <div   class="navbar-header" >
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span> 
+              </button>
             <a class="navbar-brand"  href="index.html">
                 FootBall<br>
                 News!
@@ -22,27 +27,28 @@
             
  <!--<img class="logo" src="resources/logo.png" alt="site logo">-->
         </div>
-
-    <ul class=" nav navbar-nav">
-        <li class="<?= ($active == 1)?"active":""?>">
-           <a href="home.html">Home</a>
-        </li>
-        <li class="<?= ($active == 2)?"active":""?>">
-           <a href="Ekstraklasa.html">Ekstraklasa</a>
-        </li>
-        <li class="<?= ($active == 3)?"active":""?>">
-            <a href="BundesLiga.html">Bundesliga</a>
-        </li>
-        <li class="<?= ($active == 4)?"active":""?>">
-           <a href="LigaMistrzow.html">Liga Mistrzów</a>
-        </li>
-        <li class="<?= ($active == 5)?"active":""?>">
-            <a href="Wyniki.html">Wyniki</a>
-        </li>
-        <li class="<?= ($active == 6)?"active":""?>">
-            <a href="panel.html">Panel</a>
-        </li>
-    </ul>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class=" nav navbar-nav">
+                <li class="<?= ($active == 1)?"active":""?>">
+                   <a href="home.html">Home</a>
+                </li>
+                <li class="<?= ($active == 2)?"active":""?>">
+                   <a href="Ekstraklasa.html">Ekstraklasa</a>
+                </li>
+                <li class="<?= ($active == 3)?"active":""?>">
+                    <a href="BundesLiga.html">Bundesliga</a>
+                </li>
+                <li class="<?= ($active == 4)?"active":""?>">
+                   <a href="LigaMistrzow.html">Liga Mistrzów</a>
+                </li>
+                <li class="<?= ($active == 5)?"active":""?>">
+                    <a href="Wyniki.html">Wyniki</a>
+                </li>
+                <li class="<?= ($active == 6)?"active":""?>">
+                    <a href="panel.html">Panel</a>
+                </li>
+            </ul>
+        </div>
 </div>   
 </nav>
 <div class="glowny ">
