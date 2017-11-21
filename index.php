@@ -9,21 +9,25 @@ if($db->connect_errno!=0)
 {
 	echo '<p class="error"> ' . $db->connect_errno . '</p>';
 }
-
+$active = 1;
 
 
 $s = $_GET['s'];
 switch ( $s ) {
 	case "Ekstraklasa":
+                $active = 2;
 		$t = "Ekstraklasa";
 		break;
 	case "BundesLiga":
+                $active = 3;
 		$t = "Bundes Liga";
 		break;
 	case "Wyniki":
+                $active = 5;
 		$t = "Wyniki";
 		break;
 	case "panel":
+            $active = 6;
 		if (isset($_SESSION['logedin']) || $_SESSION['logedin'] == '1')
 		{
 			$t = "Panel";
@@ -36,6 +40,7 @@ switch ( $s ) {
 		}
 		break;
 	case "panel_exe":
+            $active = 6;
 		if ($_POST['dodaj'] !='') {
 			if ( $_POST['team1'] != '' && $_POST['team2'] != '' ) {
 				$query = "INSERT INTO updates (`goals_team_1`, `goals_team_2`, `game_id`) VALUES ('" . $_POST['team1'] . "', '" . $_POST['team2'] . "', '" . $_POST['game'] . "');";
@@ -73,6 +78,7 @@ switch ( $s ) {
 		break;
 
 	case "login_exe":
+            $active = 6;
 		if ($_POST['login'] != '' && $_POST['haslo'] != '') {
 
 			$rezultat = $db->query(
@@ -95,13 +101,16 @@ switch ( $s ) {
 		header('Location: panel.html');
 		break;
 	case "logout":
+            $active = 1;
 		unset ($_SESSION['logedin']);
 		header('Location: panel.html');
 		break;
 	case "LigaMistrzow":
+            $active = 4;
 		$t = "Liga Mistrzów";
 		break;
 	default:
+                $active = 1;
 		$s = "home";
 		$t = "Home";
 }
