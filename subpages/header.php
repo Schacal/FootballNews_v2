@@ -51,4 +51,4 @@
         </div>
 </div>   
 </nav>
-<div class="glowny ">
+<div class="glowny container-fluid" >

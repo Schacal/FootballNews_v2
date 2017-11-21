@@ -97,7 +97,7 @@ p {
 }
 
 div.glowny {
-    position: absolute;
+    /*position: absolute;*/
     left: 40%;
     top: 25%;
     right: 20%;
